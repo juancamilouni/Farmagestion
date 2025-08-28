@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FarmaGestion | Inicio</title>
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    main { flex: 1; }
+
+    body { margin:0; font-family: Arial, sans-serif; background: #f5fdf9; }
+    header {
+      background: #e0f2e9;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #c8e6c9;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #2e7d32;
+      text-decoration: none;
+    }
+    nav { flex: 1; text-align: center; }
+    nav a { margin: 0 0.75rem; text-decoration: none; color: #2e7d32; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .cart { color: #2e7d32; font-weight: bold; }
+    main { padding: 2rem; }
+    h1 { color: #2e7d32; }
+    .products { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap:1rem; }
+    .product { background:#fff; border:1px solid #c8e6c9; padding:1rem; border-radius:4px; text-align: center; }
+    .btn { display:block; margin-top:0.5rem; padding:0.5rem; background:#81c784; color:#fff; text-align:center; text-decoration:none; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><strong>FarmaGestion </strong></a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Registro</a>
+      <a href="inventory.html">Inventario</a>
+      <a href="delivery.html">Entrega</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+    <div class="cart">Cesta ( <span>0</span> )</div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Bienvenido a FarmaGestion</h1>
+      <p>Encuentra tus medicamentos y productos de cuidado personal.</p>
+    </section>
+
+    <section aria-labelledby="titulo-productos">
+      <h2 id="titulo-productos" style="color:#2e7d32; margin-top:1.5rem;">Productos destacados</h2>
+
+      <div class="products">
+        <article class="product">
+          <img src="Images/VitaminaC.jpg" alt="Vitamina C por 30 unidades" width="200" height="150" />
+          <h3>Vitamina C</h3>
+          <p>$12.000</p>
+          <a href="cart.html" class="btn">Añadir a la cesta</a>
+        </article>
+        <article class="product">
+          <img src="Images/jarabe.jpg" alt="Jarabe 500 ml" width="200" height="150" />
+          <h3>Jarabe</h3>
+          <p>$8.500</p>
+          <a href="cart.html" class="btn">Añadir a la cesta</a>
+        </article>
+        <article class="product">
+          <img src="Images/acetaminofem.jpg" alt="Acetaminofén x 10 tabletas" width="200" height="150" />
+          <h3>Acetaminofén</h3>
+          <p>$8.500</p>
+          <a href="cart.html" class="btn">Añadir a la cesta</a>
+        </article>
+        <article class="product">
+          <img src="Images/ADVIL.jpg" alt="Advil x 5 unidades" width="200" height="150" />
+          <h3>Advil</h3>
+          <p>$8.500</p>
+          <a href="cart.html" class="btn">Añadir a la cesta</a>
+        </article>
+        <article class="product">
+          <img src="Images/Clona.jpg" alt="Clonazepam" width="200" height="150" />
+          <h3>Clonazepam</h3>
+          <p>$8.500</p>
+          <a href="cart.html" class="btn">Añadir a la cesta</a>
+        </article>
+        <article class="product">
+          <img src="Images/ketamina.jpg" alt="Ketamina" width="200" height="150" />
+          <h3>Ketamina</h3>
+          <p>$8.500</p>
+          <a href="cart.html" class="btn">Añadir a la cesta</a>
+        </article>
+      </div>
+    </section>
+    <section style="margin-top:2rem; text-align:center;">
+     <h2 style="color:#2e7d32;">Video informativo</h2>
+     <p>Mira este video sobre salud:</p>
+      <iframe width="560" height="315" 
+       src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+       title="Video de YouTube" 
+       frameborder="0" 
+       allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+
+  <footer style="text-align:center; padding:1rem; background:#e0f2e9; border-top:2px solid #c8e6c9; margin-top:2rem;">
+    <small>&copy; 2025 FarmaGestion.
+      <a href="contact.html" style="color:#2e7d32; text-decoration:none; font-weight:bold;">Contacto</a>
+    </small>
+  </footer>
+</body>
+</html>

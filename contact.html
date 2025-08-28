@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FarmaGestion  | Contacto</title>
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    main { flex: 1; }
+    body { margin:0; font-family: Arial, sans-serif; background:#f5fdf9; color:#1b1b1b; }
+
+
+    header {
+      background:#e0f2e9;
+      padding:1rem 2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:2px solid #c8e6c9;
+    }
+    .logo { font-size:1.3rem; font-weight:bold; color:#2e7d32; text-decoration:none; }
+    nav { flex:1; text-align:center; }
+    nav a { margin:0 0.75rem; text-decoration:none; color:#2e7d32; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    .cart { font-weight:bold; color:#2e7d32; }
+
+
+    main {
+      padding:2rem;
+      max-width:500px;
+      margin:2rem auto;
+      background:#fff;
+      border:1px solid #c8e6c9;
+      border-radius:6px;
+    }
+    h2 { color:#2e7d32; margin-top:0; }
+
+
+    form { margin-top:1rem; }
+    label { display:block; margin-top:0.8rem; font-size:0.9rem; color:#2f5131; }
+    input, textarea {
+      width:100%;
+      padding:0.6rem;
+      margin-top:0.3rem;
+      border:1px solid #c8e6c9;
+      border-radius:4px;
+      font-size:1rem;
+    }
+    textarea { height:120px; resize:vertical; }
+    button {
+      margin-top:1rem;
+      width:100%;
+      padding:0.6rem;
+      background:#81c784;
+      color:#fff;
+      border:none;
+      border-radius:4px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+    button:hover { filter:brightness(0.95); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">FarmaGestion </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Registro</a>
+      <a href="inventory.html">Inventario</a>
+      <a href="delivery.html">Entrega</a>
+    </nav>
+    <div class="cart">Cesta ( <span>0</span> )</div>
+  </header>
+
+  <main>
+    <h2>Contáctanos</h2>
+    <p>Si tienes preguntas sobre tu pedido o necesitas asistencia, completa el formulario y te responderemos lo antes posible.</p>
+    <form action="#">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" placeholder="Tu nombre" required />
+
+      <label for="correo">Correo electrónico</label>
+      <input id="correo" type="email" placeholder="tu@correo.com" required />
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <footer style="text-align:center; padding:1rem; background:#e0f2e9; border-top:2px solid #c8e6c9; margin-top:2rem;">
+    <small>&copy; 2025 FarmaGestion. 
+      <a href="contact.html" style="color:#2e7d32; text-decoration:none; font-weight:bold;">Contacto</a>
+    </small>
+  </footer>
+</body>
+</html>
